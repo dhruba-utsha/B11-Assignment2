@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.orange{
+    color: orange;
+}
+
+.sky{
+    color: skyblue;
+}
+
+body{
+    font-family: "Quicksand", serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 6.2rem;
+
+    .school{
+        display: flex;
+        align-items: center;
+
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+            padding-left: 8px;
+        }
+    }
+
+    .feature{
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+
+        a{
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+        }
+
+        .home-btn{
+            font-weight: bold;
+            color: orange;
+        }
+
+        .about-btn{
+            color: skyblue;
+        }
+
+        .facilities-btn{
+            color: #05D4DF;
+        }
+
+        .admission-btn{
+            color: #5D58EF;
+        }
+    }
+
+    .contact-btn{
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        background-color: orange;
+        padding: 10px 30px;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+    }
+
+}
+
+
+#banner{
+    display: flex;
+    justify-content: space-between;
+    gap: 3.2rem;
+    align-items: center;
+    padding: 0 6.2rem;
+
+    .text{
+        h1{
+            font-size: 56px;
+            font-weight: bold;
+            margin-bottom: 1.2rem;
+        }
+
+        p{
+            font-size: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        button{
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: black;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    }
+}
+
+#standard{
+    background-image: url("./assets/bg.png");
+    background-repeat: no-repeat;
+    padding: 0 6.2rem 2rem;
+
+    h1{
+        font-size: 46px;
+        font-weight: bold;
+        text-align: center;
+        padding: 3rem 0 4.5rem;
+    }
+
+    .item{
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+
+        .cart{
+            background-color: #5D58EF;
+            border-radius: 18px;
+            padding: 3rem;
+            text-align: center;
+
+            h3{
+                font-size: 24px;
+                font-weight: bold;
+                margin: 1.2rem 0;
+            }
+
+            p{
+                font-size: 14px;
+                color: #808080;
+                margin: 1.5rem 0;
+            }
+
+            h5{
+                font-size: 14px;
+                font-weight: bold;
+                margin-top: 2rem;
+            }
+        }
+
+        .cart1{
+            background-image: linear-gradient(to bottom, #DEF5FF, #ffffff, #ffffff);
+            border: 1px solid #DEF5FF;
+            h5{
+                color: #64C8FF;
+            }
+        }
+
+        .cart2{
+            background-image: linear-gradient(to bottom, #FFF4DC, #ffffff, #ffffff);
+            border: 1px solid #FFF4DC;
+            h3{
+                margin-top: 2rem;
+            }
+            h5{
+                color: #F0AA00;
+            }
+        }
+
+        .cart3{
+            background-image: linear-gradient(to bottom, #F2E8FF, #ffffff, #ffffff);
+            border: 1px solid #F2E8FF;
+            h3{
+                margin-top: 1.8rem;
+            }
+            h5{
+                color: #8700FF;
+            }
+        }
+    }
+    .arrow-btn{
+        text-align: center;
+        padding: 4.5rem 0;
+
+        img{
+            cursor: pointer;
+            margin-left: 0.5rem;
+        }
+    }
+}
+
+@media screen and ( max-width: 576px ){
+
+    nav{
+        padding: 0.7rem 1rem;
+        border-bottom: 1px solid orange;
+
+        .school h1, .feature, .contact-btn{
+            display: none;
+        }
+
+        .menu{
+            display: inline;
+        }
+    }
+
+    #banner{
+        flex-direction: column-reverse;
+        gap: 1rem;
+        margin: 1.5rem 0;
+        padding: 0 1rem;
+
+        .image{
+            width: 100%;
+            grid-row-start: auto;
+        }
+
+        .text{
+            h1{
+                font-size: 32px;
+                text-align: center;
+            }
+
+            p{
+                font-size: 14px;
+                text-align: center;
+            }
+
+            .enroll-btn{
+                display: flex;
+                justify-content: center;
+            }
+
+            button{
+                font-size: 1rem;
+            }
+        }
+    }
+
+    #standard{
+        padding: 0 1rem 2rem;
+
+        h1{
+            font-size: 26px;
+            padding: 2.5rem 0 1rem;
+        }
+
+        .item{
+            display: grid;
+            width: 100%;
+            gap: 1rem;
+        }
+
+        .arrow-btn{
+            display: none;
+        }
+    }
+}
