@@ -116,7 +116,7 @@ nav{
 #standard{
     background-image: url("./assets/bg.png");
     background-repeat: no-repeat;
-    padding: 0 6.2rem 2rem;
+    padding: 0 6.2rem;
 
     h1{
         font-size: 46px;
@@ -152,6 +152,7 @@ nav{
                 font-size: 14px;
                 font-weight: bold;
                 margin-top: 2rem;
+                cursor: pointer;
             }
         }
 
@@ -187,11 +188,64 @@ nav{
     }
     .arrow-btn{
         text-align: center;
-        padding: 4.5rem 0;
+        padding: 4rem 0 3rem;
 
         img{
             cursor: pointer;
             margin-left: 0.5rem;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #01ACFD;
+    padding: 5rem 6.2rem 7rem;
+    color: white;
+
+    .left{
+        .logo-section{
+            display: flex;
+            align-items: center;
+        }
+        p{
+            font-size: 20px;
+            padding-top: 2rem;
+        }
+    }
+
+    .middle{
+        h3{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        ul{
+            list-style: none;
+            display: grid;
+            gap: 1rem;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .right{
+        h3{
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+        }
+
+        img{
+            cursor: pointer;
+            padding-right: 0.2rem;
         }
     }
 }
@@ -261,5 +315,11 @@ nav{
         .arrow-btn{
             display: none;
         }
+    }
+
+    footer{
+        padding: 3rem 1rem;
+        display: grid;
+        gap: 2.5rem;
     }
 }
