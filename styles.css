@@ -197,6 +197,86 @@ nav{
     }
 }
 
+#stories{
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 100%, 0.5), hsl(38, 100%, 80%, 0.5)), url("./assets/bg.png");
+    background-repeat: repeat-y;
+    padding: 0 6.2rem;
+
+    h1{
+        font-size: 46px;
+        font-weight: bold;
+        text-align: center;
+        padding: 3rem 0 2rem;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 2fr);
+        gap: 1rem;
+
+        .story1 {
+            background-color: white;
+            border-radius: 16px;
+
+            img{
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+            }
+
+            h3{
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 3rem 2rem;
+            }
+
+            p{
+                color: #666666;
+                font-size: 1rem;
+                padding: 0 2rem 2rem;
+            }
+          }
+        
+        .item{
+            background-color: white;
+            border-radius: 16px;
+
+            img{
+                border-top-right-radius: 16px;
+                border-top-left-radius: 16px;
+            }
+
+            h3{
+                font-size: 1rem;
+                font-weight: bold;
+                padding: 2rem;
+            }
+        }
+
+        .small-cart{
+            display: grid;
+            gap: 1rem;
+        }
+    }
+
+    .view-btn{
+        display: flex;
+        justify-content: center;
+        padding: 5rem 0 3rem;
+
+        button{
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: black;
+            padding: 10px 40px;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+    }
+
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -205,12 +285,14 @@ footer{
     color: white;
 
     .left{
+        width: 30%;
         .logo-section{
             display: flex;
             align-items: center;
         }
         p{
             font-size: 20px;
+            text-align: justify;
             padding-top: 2rem;
         }
     }
@@ -321,5 +403,9 @@ footer{
         padding: 3rem 1rem;
         display: grid;
         gap: 2.5rem;
+
+        .left{
+            width: 100%;
+        }
     }
 }
