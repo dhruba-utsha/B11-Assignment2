@@ -13,6 +13,11 @@
     color: skyblue;
 }
 
+marquee {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
 body{
     font-family: "Quicksand", serif;
 }
@@ -396,6 +401,40 @@ footer{
 
         .arrow-btn{
             display: none;
+        }
+    }
+
+    #stories{
+        padding: 0 1rem;
+
+        h1{
+            font-size: 26px;
+            padding: 2rem 0;
+        }
+
+        .container{
+            grid-template-columns: repeat(2, 1fr);
+            justify-content: space-between;
+
+            .story1{
+                display: none;
+            }
+
+            .small-cart .item {
+                img{
+                width: 100%;
+                }
+
+                h3{
+                    font-size: 0.6rem;
+                }
+            }
+        }
+        .view-btn{
+            padding: 3rem 0 2rem;
+            button{
+                font-size: 1rem;
+            }
         }
     }
 
